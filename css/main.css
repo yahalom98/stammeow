@@ -1,0 +1,105 @@
+body {
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+  background-color: black;
+}
+
+/*============ MEDIA QUERY BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
+.block-container {
+  border: 2px solid whitesmoke;
+  height: 400px;
+}
+
+.block-container .block-1 {
+  height: 150px;
+  width: 200px;
+  background-color: blue;
+}
+
+.block-container .block-2 {
+  height: 150px;
+  width: 200px;
+  background-color: pink;
+}
+
+@media (min-width: 576px) {
+  .block-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .block-container .block-1 {
+    background-color: red;
+    width: 150px;
+  }
+  .block-container .block-2 {
+    background-color: bisque;
+    width: 150px;
+  }
+}
+
+@media (min-width: 768px) {
+  .block-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .block-container .block-1 {
+    background-color: green;
+    width: 100px;
+  }
+  .block-container .block-2 {
+    background-color: grey;
+    width: 100px;
+  }
+}
+
+@media (min-width: 992px) {
+  .block-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .block-container .block-1 {
+    background-color: green;
+    width: 50px;
+  }
+  .block-container .block-2 {
+    background-color: grey;
+    width: 50px;
+    display: none;
+  }
+}
+/*# sourceMappingURL=main.css.map */

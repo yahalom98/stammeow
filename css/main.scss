@@ -1,0 +1,132 @@
+body {
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+}
+
+
+/*============ MEDIA QUERY BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
+
+// header {
+//     position: relative;
+//     background-color: black;
+//     height: 75vh;
+//     min-height: 25rem;
+//     width: 100%;
+//     overflow: hidden;
+//     .video {
+//         position: absolute;
+//         top: 50%;
+//         left: 50%;
+//         min-width: 100%;
+//         min-height: 100%;
+//         width: auto;
+//         height: auto;
+//         z-index: 0;
+//         -ms-transform: translateX(-50%) translateY(-50%);
+//         -moz-transform: translateX(-50%) translateY(-50%);
+//         -webkit-transform: translateX(-50%) translateY(-50%);
+//         transform: translateX(-50%) translateY(-50%);
+//     }
+//     .container {
+//         position: relative;
+//         z-index: 1;
+//     }
+//     .overlay {
+//         position: absolute;
+//         top: 0;
+//         left: 0;
+//         height: 100%;
+//         width: 100%;
+//         background-color: black;
+//         opacity: 0.5;
+//         z-index: 1;
+//     }
+// }
+.block-container {
+    border: 2px solid whitesmoke;
+    height: 400px;
+    .block-1 {
+        height: 150px;
+        width: 200px;
+        background-color: blue;
+    }
+    .block-2 {
+        height: 150px;
+        width: 200px;
+        background-color: pink;
+    }
+}
+
+// Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    .block-container {
+        display: flex;
+        justify-content: center;
+        .block-1 {
+            background-color: red;
+            width: 150px;
+        }
+        .block-2 {
+            background-color: bisque;
+            width: 150px;
+        }
+    }
+}
+
+// // Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .block-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .block-1 {
+            background-color: green;
+            width: 100px;
+        }
+        .block-2 {
+            background-color: grey;
+            width: 100px;
+        }
+    }
+}
+
+// // Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    .block-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .block-1 {
+            background-color: green;
+            width: 50px;
+        }
+        .block-2 {
+            background-color: grey;
+            width: 50px;
+            display: none;
+        }
+    }
+}
+
+// // Extra (xl) large devices (large desktops, 1200px and up)
+// @media (min-width: 1200px) {
+//     ...
+// }
